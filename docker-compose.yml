@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    app:
+        build: .
+        volumes:
+          - .:/fastapi_blog
+        ports:
+          - 8000:8000
+
+        image: app:fastapi_blog
+        container_name: fastapi_blog_container
+        command: uvicorn main:app --reload --port=8000 --host=0.0.0.0
