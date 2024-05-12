@@ -8,3 +8,7 @@ SECRET_KEY=Jwt_secret_key
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=Access_token
 ```
+* Clone the repository
+* Run ```docker-compose build```
+* After Running build RUN ```docker-compose up```
+* Now navigate to ```http://localhost:8000``` in the browser to test it out.
